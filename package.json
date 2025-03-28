@@ -1,0 +1,49 @@
+{
+  "name": "telegram-gemini-bot",
+  "version": "1.0.0",
+  "description": "A Telegram bot powered by Google's Gemini AI model",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:prod": "NODE_ENV=production node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint . --fix",
+    "format": "prettier --write .",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/notsopreety/telegram-gemini-bot.git"
+  },
+  "author": "Samir Thakuri",
+  "license": "MIT",
+  "keywords": [
+    "telegram",
+    "bot",
+    "AI",
+    "gemini",
+    "google",
+    "telegram-bot",
+    "nodejs"
+  ],
+  "dependencies": {
+    "@google/genai": "^0.6.1",
+    "@google/generative-ai": "^0.2.0",
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.1",
+    "express": "^4.21.2",
+    "form-data": "^4.0.2",
+    "fs": "^0.0.1-security",
+    "node-telegram-bot-api": "^0.64.0",
+    "path": "^0.12.7",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "eslint": "^8.55.0",
+    "prettier": "^3.2.5"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}

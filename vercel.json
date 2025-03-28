@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "index.js"
+      }
+    ],
+    "env": {
+      "TELEGRAM_BOT_TOKEN": "@telegram_bot_token",
+      "GOOGLE_API_KEY": "@google_api_key",
+      "NODE_ENV": "production"
+    }
+}  
